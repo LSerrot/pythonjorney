@@ -1,0 +1,6 @@
+### TOCAR MP3 ### USEI A LIB PLAYSOUND MAS ERA PRA USAR PYGAME ### AINDA ESTÁ ACUSANDO UM ERRO 263 NO TERMINAL MAS O VSCODE NÃO ENCRENCA E EXECUTA TUDO CERTO
+
+# Importações
+from playsound import playsound
+playsound('ex021.mp3')
+print()
