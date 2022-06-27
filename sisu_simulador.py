@@ -29,7 +29,7 @@ while tipo == "" or tipo not in '12':
 if tipo == "1":
     print("\nVamos dar início ao cálculo da sua média simples!")
 
-    n_lct = float(input("\nDigite aqui a sua nota em Linguagens: "))
+    n_lct = input_de_validacao("\nDigite aqui a sua nota em Linguagens: ")
     n_cht = float(input("Digite aqui a sua nota em Ciências Humanas: "))
     n_cnt = float(input("Digite aqui a sua nota em Ciências da Natureza: "))
     n_mat = float(input("Digite aqui a sua nota em Matemática: "))
