@@ -9,13 +9,12 @@ print("-=-" * 13)
 print("Seja bem-vindo(a) ao Sisu Calculator!")
 print("-=-" * 13)
 print('''
-[ S ] SIMPLES
-[ P ] PONDERADA
+[ 1 ] SIMPLES
+[ 2 ] PONDERADA
 ''')
-tipo = input("Escolha qual o tipo de média você quer calcular: [S/P] ").strip().lower()
-while tipo not in 'sp':
-    tipo = str(
-        input("Opção inválida. Escolha qual o tipo de média você quer calcular: [S/P] "))
+tipo = input("Escolha qual o tipo de média você quer calcular: [1/2] ").strip().lower()
+while tipo == "" or tipo not in '12':
+    tipo = input("Opção inválida. Escolha qual o tipo de média você quer calcular: [1/2] "))
 
 # CÁLCULO DA MÉDIA SIMPLES
 if tipo == "s":
