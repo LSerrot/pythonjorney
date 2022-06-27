@@ -3,6 +3,15 @@
 # Importações
 from time import sleep
 
+def input_de_validacao(msg):
+    x = input(msg)
+    while x.isnotnumeric():
+        x = input_de_validacao("Valor inválido" + msg)
+    x = float(x)
+    return x
+    
+
+
 # Strings inputáveis
 print()
 print("-=-" * 13)
@@ -17,7 +26,7 @@ while tipo == "" or tipo not in '12':
     tipo = input("Opção inválida. Escolha qual o tipo de média você quer calcular: [1/2] "))
 
 # CÁLCULO DA MÉDIA SIMPLES
-if tipo == "s":
+if tipo == "1":
     print("\nVamos dar início ao cálculo da sua média simples!")
 
     n_lct = float(input("\nDigite aqui a sua nota em Linguagens: "))
@@ -35,7 +44,7 @@ if tipo == "s":
     print(f"\nA sua média simples é de {ms} pontos.\n")
 
 # CÁLCULO DA MÉDIA PONDERADA
-elif tipo == "p":
+elif tipo == "2":
 
     print("\nVamos dar início ao cálculo da sua média ponderada!")
 
